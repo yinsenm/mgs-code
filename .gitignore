@@ -1,0 +1,22 @@
+# Market data and generated panels; markdown preparation guides remain tracked.
+data/**
+!data/**/*.md
+!data/*.md
+
+# Generated output and local environments.
+results/
+.venv/
+.matplotlib/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Native builds and local editor files.
+mgs/cpp/build/
+mgs/mgs/cgerber*.so
+mgs/mgs/cgerber*.pyd
+mgs/mgs/cgerber*.dylib
+.idea/
+.vscode/

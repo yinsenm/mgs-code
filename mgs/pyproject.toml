@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mgs-paper-reproduction"
+version = "0.1.0"
+description = "Code for the Modified Gerber Statistic SSRN paper's reported results"
+requires-python = ">=3.10"
+dependencies = [
+  "cvxpy",
+  "numpy",
+  "openpyxl",
+  "pandas",
+  "pandas-datareader",
+  "scipy",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+cpp = ["pybind11"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mgs", "mgs.*"]
