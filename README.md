@@ -1,6 +1,6 @@
 # Modified Gerber Statistic — main paper examples
 
-This repository reproduces the two **main performance examples** in the *Modified Gerber Statistic* SSRN manuscript (SSRN 7190778): the 10-asset multi-asset study and the point-in-time S&P 500 top-30 study. It retains the paper's `n=1`, `gamma=1`, no-decay specifications and the HC, SM, and GS comparators. Appendix sensitivity sweeps, paired significance tests, and the polar illustration are intentionally excluded.
+This repository reproduces the two **main performance examples** in the [*Modified Gerber Statistic* SSRN manuscript](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7190778) (SSRN 7190778): the 10-asset multi-asset study and the point-in-time S&P 500 top-30 study. It retains the paper's `n=1`, `gamma=1`, no-decay specifications and the HC, SM, and GS comparators. Appendix sensitivity sweeps, paired significance tests, and the polar illustration are intentionally excluded.
 
 There are two end-to-end entry points, both run from the repository root (or by absolute path):
 
