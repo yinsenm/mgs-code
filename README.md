@@ -58,7 +58,3 @@ PYTHON_BIN="$PWD/.venv/bin/python" ./run_multi_asset.sh
 Intermediate allocations and portfolio series are saved under `results/n10/`, `results/n10_divergence/`, `results/sp500_baselines/`, and `results/sp500_signals/`. All `results/` content remains local.
 
 The submitted stock table combines historical optimizer runs: HC, SM, and GS use the paper-era optimizer, while MGS-family rows use its guarded revision. The runners select these versions explicitly. The guarded version allows a `2e-6` absolute variance residual (or 0.1% of target variance, whichever is larger) so minor cross-platform solver differences do not silently omit a rebalance month. The stock runners fail if any expected allocation file is missing.
-
-## 4. Compare with the manuscript
-
-At the 9% target, the manuscript reports annualized geometric returns of 11.26% for multi-asset MGS, 11.04% for GS, and 11.25% for MGS+Div; the stock example reports 9.15% for MGS, 8.42% for GS, 9.76% for MGS+Div, and 9.26% for MGS+RVOL. With the original local input files, a complete run produced 432 allocations per method and 431 monthly return observations. The largest geometric-return differences from the submitted main tables were 0.006 and 0.008 percentage points for the multi-asset and stock examples, respectively. This is a close numeric reproduction, not byte-for-byte equality; independently sourced data or different solvers may differ more.
